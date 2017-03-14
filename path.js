@@ -1,17 +1,30 @@
 //Your code below
-funtcion buildpath(p,n){
+function buildpath(p,n){
   let path = [];
-  for (f=0,f<0,f++){
+  for(x=0;x<n;x++){
     let r = Math.random();
     if(r <= p){
-      path[x] = fasle;
+      path[x] = false;
 
     }
-    esle {
+    else{
       path[x] = true;
     }
   }
-  
+  path[x] = true;
+  return path;
+}
+
+function stoll(path,index){
+  if(index == path.length){
+    return 1;
+  }
+  else if(index > path.length){
+    return 0;
+  }
+}
+else{
+  return stroll(path,index+1)
 }
 
 
